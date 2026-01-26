@@ -1,5 +1,8 @@
 export default [
   {
+    ignores: ['eslint.config.js']
+  },
+  {
     files: ['**/*.js'],
     languageOptions: {
       ecmaVersion: 2022,
@@ -9,9 +12,9 @@ export default [
         module: 'readonly',
         process: 'readonly',
         __dirname: 'readonly',
+        describe: 'readonly',
         test: 'readonly',
-        expect: 'readonly',
-        describe: 'readonly'
+        expect: 'readonly'
       }
     },
     rules: {
