@@ -9,7 +9,7 @@
     "test": "NODE_ENV=test jest",
     "lint": "eslint .",
     "format:check": "prettier --check .",
-    "build": "echo \"Building production assets... success\""
+    "build": "esbuild app/index.js --bundle --outfile=dist/index.js --platform=node"
   },
   "keywords": [],
   "author": "",
