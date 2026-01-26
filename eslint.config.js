@@ -1,6 +1,6 @@
 export default [
   {
-    ignores: ['eslint.config.js']
+    ignores: ['eslint.config.js'],
   },
   {
     files: ['**/*.js'],
@@ -14,12 +14,11 @@ export default [
         __dirname: 'readonly',
         describe: 'readonly',
         test: 'readonly',
-        expect: 'readonly'
-      }
+        expect: 'readonly',
+      },
     },
     rules: {
-      'no-unused-vars': 'warn'
-    }
-  }
+      'no-unused-vars': 'warn',
+    },
+  },
 ];
-

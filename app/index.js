@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get('/', (req, res) => res.json({ status: 'OK', message: 'System Operational' }));
+app.get('/', (req, res) =>
+  res.json({ status: 'OK', message: 'System Operational' }),
+);
 
 app.get('/greet/:name', (req, res) => {
   const name = req.params.name;
@@ -21,4 +23,3 @@ if (require.main === module) {
 }
 
 module.exports = app;
-
