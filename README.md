@@ -14,17 +14,23 @@ Git
 Verify installation:
 
 node -v
+
 npm -v
+
 git --version
 
 Project Setup
-1. Clone the Repository
+
+Clone the Repository
+
 the url is given in thedocument
 
-2. Install Dependencies
+Install Dependencies
+
 npm install
 
-3. Run the Application
+Run the Application
+
 npm start
 
 
@@ -33,10 +39,15 @@ The application will start on:
 http://localhost:3000
 
 Available Endpoints
+
 Method	Endpoint	Description
+
 GET	/	Health check
+
 GET	/greet/:name	Returns a greeting message
+
 GET	/add?a=&b=	Returns the sum of two numbers
+
 Running Tests
 
 Run unit tests:
@@ -48,8 +59,6 @@ Run tests with coverage:
 
 npm test -- --coverage
 
-
-Coverage reports are generated in the coverage/ directory.
 
 Code Quality Checks
 
@@ -65,6 +74,7 @@ npm run format:check
 CI Pipeline
 
 This project uses GitHub Actions for Continuous Integration.
+
 
 The pipeline:
 
